@@ -16,11 +16,13 @@ export default function NewUser() {
     const [customGender, setCustomGender] = useState();
     const [avatar, setAvatar] = useState();
     const [dob, setDob] = useState();
-    const [guardianFirstName, setGuardianFirstName] = useState();
+    const [email, setEmail] = useState();
+    const []
 
     function handleAddNumber (e) {
         const holder = document.getElementById("otherNumbers");
-        const fields = document.createElement("");
+        const fields = document.createElement("div");
+        fields.setAttribute('id','');
     }
     return (
         <form>
