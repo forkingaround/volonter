@@ -15,7 +15,7 @@ import { calculateAge } from 'utils/user/isAdult';
 //import TextInput from 'components/TextInput';
 //import { isTextOnly } from 'utils/form/validation';
 import { useNavigate } from 'react-router-dom';
-
+const serverUrl = 'http://localhost:5000';
 
 export function ImageUpload() {
     const toast = useRef(null);
@@ -76,7 +76,7 @@ export default function NewUser() {
     function handleSubmit(e) {
         e.preventDefault();
 
-        fetch('http://localhost:5000/register', {
+        fetch(`${serverUrl}/register`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
